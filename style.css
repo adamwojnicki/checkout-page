@@ -48,7 +48,7 @@ body {
 }
 
 .main {
-  width: 50%;
+  width: 60%;
 }
 
 .form {
@@ -128,6 +128,63 @@ body {
 
 .form__field select:required:invalid {
   color: var(--grey-dark4);
+}
+
+.aside {
+  width: 40%;
+}
+
+.item-list {
+  background: var(--grey-light2);
+  border-radius: 15px;
+  padding: 33px;
+}
+
+.item-list__item {
+  margin-bottom: 32px;
+}
+
+.item-list__img {
+  margin-right: 28px;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.item-list__info {
+  width: 50%;
+}
+
+.item-list__name {
+  font-size: 1.6rem;
+  color: var(--grey-dark3);
+  margin-bottom: 12px;
+}
+
+.item-list__pricetag {
+  margin-bottom: 32px;
+}
+
+.pricetag--is {
+  font-size: 1.6rem;
+  color: var(--orange);
+  margin-right: 16px;
+}
+
+.pricetag--was {
+  color: var(--grey-dark3);
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+.item-list__quantity {
+  text-align: center;
+  height: 52px;
+  font-size: 16px;
+  width: 100%;
+  color: var(--grey-dark1);
+  border-radius: 10px;
+  border: 1px solid var(--grey-dark4);
+  background: var(--grey-light2);
 }
 
 .footer {
