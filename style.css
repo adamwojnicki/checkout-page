@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+:root {
+  font-size: 10px;
+  --sans-serif: "Montserrat", Arial, Helvetica, sans-serif;
+  --grey-dark1: #333333;
+  --grey-dark2: #4f4f4f;
+  --grey-dark2: #4e5150;
+  --grey-light1: #a9a9a9;
+  --grey-light2: #f2f2f2;
+  --orange: #f2994a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
