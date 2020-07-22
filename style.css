@@ -5,7 +5,8 @@
   --sans-serif: "Montserrat", Arial, Helvetica, sans-serif;
   --grey-dark1: #333333;
   --grey-dark2: #4f4f4f;
-  --grey-dark2: #4e5150;
+  --grey-dark3: #4e5150;
+  --grey-dark4: #828282;
   --grey-light1: #a9a9a9;
   --grey-light2: #f2f2f2;
   --orange: #f2994a;
@@ -17,8 +18,112 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 950px;
   margin: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+body {
+  font-family: var(--sans-serif);
+  color: var(--grey-dark1);
+  font-weight: 600;
+}
+
+.header {
+  width: 100%;
+  padding: 64px 0;
+}
+
+.header__headline {
+  font-size: 3.6rem;
+}
+
+.main {
+  width: 50%;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-section {
+  margin-bottom: 58px;
+}
+
+.form-section > .flex-container {
+  width: 90%;
+  justify-content: space-between;
+}
+.form-section > .flex-container > * {
+  max-width: 48%;
+}
+
+.form-section__headline {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.form__field {
+  width: 90%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form__field > * {
+  display: block;
+}
+
+.form__field label {
+  margin-bottom: 7px;
+  font-size: 1.2rem;
+}
+
+.form__field input,
+.form__field select {
+  width: 100%;
+  border-radius: 10px;
+  height: 56px;
+  border: 1px solid var(--grey-dark4);
+  color: var(--grey-dark1);
+  font-size: 16px;
+  display: block;
+}
+
+.form__field .icon {
+  position: absolute;
+  z-index: 10;
+  top: 65%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: var(--grey-dark4);
+}
+
+.form__field input {
+  text-indent: 52px;
+}
+
+.form__field input::placeholder {
+  color: var(--grey-dark4);
+  font-family: var(--sans-serif);
+  font-size: 16px;
+}
+
+.footer {
+  padding: 20px;
+  margin-top: 32px;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--grey-light1);
 }
