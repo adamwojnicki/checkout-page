@@ -102,19 +102,32 @@ body {
   position: absolute;
   z-index: 10;
   top: 65%;
-  left: 16px;
+  left: 12px;
   transform: translateY(-50%);
   color: var(--grey-dark4);
 }
 
 .form__field input {
-  text-indent: 52px;
+  text-indent: 42px;
 }
 
 .form__field input::placeholder {
   color: var(--grey-dark4);
   font-family: var(--sans-serif);
   font-size: 16px;
+  opacity: 1;
+}
+
+.form__field select {
+  font-family: var(--sans-serif);
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  padding-left: 42px;
+}
+
+.form__field select:required:invalid {
+  color: var(--grey-dark4);
 }
 
 .footer {
