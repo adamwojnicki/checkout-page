@@ -6,5 +6,63 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2 class="header__headline">Checkout</h2>
+      </header>
+      <div class="flex-container">
+        <main class="main">
+          <form class="form">
+            <section class="form-section">
+              <h3 class="form-section__headline">Contact information</h3>
+              <div class="form__field">
+                <label for="email">Email</label>
+                <input type="email" name="email" />
+              </div>
+              <div class="form__field">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" />
+              </div>
+            </section>
+            <section class="form-section">
+              <h3 class="form-section__headline">Shipping address</h3>
+              <div class="form__field">
+                <label for="fullname">Full name</label>
+                <input type="text" name="fullname" />
+              </div>
+              <div class="form__field">
+                <label for="address">Address</label>
+                <input type="text" name="address" />
+              </div>
+              <div class="form__field">
+                <label for="city">City</label>
+                <input type="text" name="city" />
+              </div>
+              <div class="flex-container">
+                <div class="form__field">
+                  <label for="country">Country</label>
+                  <select name="country">
+                    <option value="pl">Poland</option>
+                    <option value="de">Germany</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="fr">France</option>
+                    <option value="it">Italy</option>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <label for="postal">Postal code</label>
+                  <input type="text" name="postal" />
+                </div>
+              </div>
+            </section>
+          </form>
+        </main>
+        <aside class="aside"></aside>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer__text">Adam Wojnicki @ DevChallenges.io</p>
+    </footer>
+  </body>
 </html>
