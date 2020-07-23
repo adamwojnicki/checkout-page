@@ -144,12 +144,14 @@ body {
 
 .aside {
   width: 40%;
-}
-
-.item-list {
   background: var(--grey-light2);
   border-radius: 15px;
   padding: 24px;
+  align-self: baseline;
+}
+
+.item-list {
+  margin-bottom: 96px;
 }
 
 .item-list__item {
@@ -218,6 +220,21 @@ body {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
+}
+
+.summary__row {
+  border-top: 1px solid #bdbdbd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__txt {
+  font-size: 1.8rem;
+}
+
+.summary__value {
+  font-size: 1.4rem;
 }
 
 .footer {
