@@ -22,6 +22,12 @@ ul {
   list-style-type: none;
 }
 
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 .container {
   width: 90%;
   max-width: 950px;
@@ -107,6 +113,11 @@ body {
   color: var(--grey-dark4);
 }
 
+.form__field .icon--right {
+  right: 12px;
+  left: unset;
+}
+
 .form__field input {
   text-indent: 42px;
 }
@@ -121,6 +132,7 @@ body {
 .form__field select {
   font-family: var(--sans-serif);
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   cursor: pointer;
   padding-left: 42px;
@@ -137,7 +149,7 @@ body {
 .item-list {
   background: var(--grey-light2);
   border-radius: 15px;
-  padding: 33px;
+  padding: 24px;
 }
 
 .item-list__item {
@@ -176,6 +188,24 @@ body {
   text-decoration: line-through;
 }
 
+.input-area {
+  position: relative;
+}
+
+.input-area button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-area .sub {
+  left: 12px;
+}
+
+.input-area .add {
+  right: 12px;
+}
+
 .item-list__quantity {
   text-align: center;
   height: 52px;
@@ -185,6 +215,9 @@ body {
   border-radius: 10px;
   border: 1px solid var(--grey-dark4);
   background: var(--grey-light2);
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .footer {
