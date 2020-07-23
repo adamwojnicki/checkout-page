@@ -93,7 +93,9 @@ body {
   font-size: 1.2rem;
 }
 
-.form__field input,
+.form__field input[type="text"],
+.form__field input[type="email"],
+.form__field input[type="tel"],
 .form__field select {
   width: 100%;
   border-radius: 10px;
