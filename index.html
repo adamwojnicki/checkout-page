@@ -27,6 +27,7 @@
                   type="email"
                   name="email"
                   placeholder="Enter your email..."
+                  required
                 />
               </div>
               <div class="form__field">
@@ -36,6 +37,7 @@
                   type="tel"
                   name="phone"
                   placeholder="Enter your phone..."
+                  required
                 />
               </div>
             </section>
@@ -48,6 +50,7 @@
                   type="text"
                   name="fullname"
                   placeholder="Your full name..."
+                  required
                 />
               </div>
               <div class="form__field">
@@ -57,12 +60,18 @@
                   type="text"
                   name="address"
                   placeholder="Your address..."
+                  required
                 />
               </div>
               <div class="form__field">
                 <label for="city">City</label>
                 <i class="material-icons icon">location_city</i>
-                <input type="text" name="city" placeholder="Your city..." />
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="Your city..."
+                  required
+                />
               </div>
               <div class="flex-container">
                 <div class="form__field">
@@ -70,9 +79,7 @@
                   <i class="material-icons icon">public</i>
                   <i class="material-icons icon icon--right">expand_more</i>
                   <select name="country" required>
-                    <option value="" disabled selected hidden
-                      >Your country...</option
-                    >
+                    <option value="" selected hidden>Your country...</option>
                     <option value="pl">Poland</option>
                     <option value="de">Germany</option>
                     <option value="uk">United Kingdom</option>
@@ -87,11 +94,18 @@
                     type="text"
                     name="postal"
                     placeholder="Your postal code..."
+                    required
                   />
                 </div>
               </div>
             </section>
-            <section class="form-section"></section>
+            <div class="form__check">
+              <input type="checkbox" name="check" />
+              <label for="check">Save this information for next time</label>
+            </div>
+            <div class="form__field">
+              <button type="submit" class="form__submit">Continue</button>
+            </div>
           </form>
         </main>
         <aside class="aside">

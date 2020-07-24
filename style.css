@@ -65,6 +65,10 @@ body {
   margin-bottom: 58px;
 }
 
+.form-section:last-of-type {
+  margin-bottom: 0;
+}
+
 .form-section > .flex-container {
   width: 90%;
   justify-content: space-between;
@@ -144,6 +148,21 @@ body {
   color: var(--grey-dark4);
 }
 
+.form__check {
+  color: var(--grey-dark2);
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.form__submit {
+  color: #fff;
+  background: var(--orange);
+  float: right;
+  padding: 17px 45px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+
 .aside {
   width: 40%;
   background: var(--grey-light2);
@@ -164,6 +183,7 @@ body {
   margin-right: 28px;
   width: 50%;
   border-radius: 15px;
+  align-self: baseline;
 }
 
 .item-list__info {
