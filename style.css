@@ -34,7 +34,8 @@ button {
   margin: auto;
 }
 
-.flex-container {
+.flex-container,
+.flex-container--main {
   display: flex;
 }
 
@@ -106,8 +107,9 @@ body {
   height: 56px;
   border: 1px solid var(--grey-dark4);
   color: var(--grey-dark1);
-  font-size: 16px;
+  font-size: 1.6rem;
   display: block;
+  text-overflow: ellipsis;
 }
 
 .form__field .icon {
@@ -131,7 +133,7 @@ body {
 .form__field input::placeholder {
   color: var(--grey-dark4);
   font-family: var(--sans-serif);
-  font-size: 16px;
+  font-size: 1.6rem;
   opacity: 1;
 }
 
@@ -142,6 +144,7 @@ body {
   appearance: none;
   cursor: pointer;
   padding-left: 42px;
+  padding-right: 42px;
 }
 
 .form__field select:required:invalid {
@@ -188,6 +191,9 @@ body {
 
 .item-list__info {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item-list__name {
@@ -268,4 +274,27 @@ body {
   text-align: center;
   font-size: 1.4rem;
   color: var(--grey-light1);
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container--main {
+    flex-direction: column-reverse;
+  }
+  .main,
+  .aside {
+    width: 100%;
+  }
+  .aside {
+    margin-bottom: 39px;
+  }
+  .form-section > .flex-container,
+  .form__field {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 8px;
+  }
 }

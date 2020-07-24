@@ -15,9 +15,9 @@
       <header class="header">
         <h2 class="header__headline">Checkout</h2>
       </header>
-      <div class="flex-container">
+      <div class="flex-container--main">
         <main class="main">
-          <form class="form">
+          <form class="form" onsubmit="alert('Success!')">
             <section class="form-section">
               <h3 class="form-section__headline">Contact information</h3>
               <div class="form__field">
@@ -104,7 +104,9 @@
               <label for="check">Save this information for next time</label>
             </div>
             <div class="form__field">
-              <button type="submit" class="form__submit">Continue</button>
+              <button type="submit" class="form__submit">
+                Continue
+              </button>
             </div>
           </form>
         </main>
